@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: 200px;
+            height: 200px;
+        }
+
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            /* 设置主轴方向为垂直方向 */
+            align-items: stretch;
+            /* 将子元素在交叉轴上拉伸到与父元素同高 */
+        }
+
+        .item-1 {
+            flex-grow: 1;
+            background-color: #ccc;
+        }
+
+        .item-2 {
+            /* 沿着交叉轴向下拉伸，填充剩余空间 */
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="item-1">Item 1</div>
+            <div class="item-2">Item 2</div>
+        </div>
+    </div>
+</body>
+
+</html>
